@@ -18,7 +18,7 @@ export function Hero() {
   const width = useWindowWidth()
 
   return (
-    <section className="mx-auto flex h-[calc(100vh-80px)] w-4/5 items-center justify-center">
+    <section className="mx-auto flex h-[calc(100dvh-80px)] w-4/5 items-center justify-center">
       <article className="w-full items-center md:items-start">
         <h1
           className={` ${ptSerif.className} font-bold text-[#0A0A22] ${
