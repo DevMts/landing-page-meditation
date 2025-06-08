@@ -22,6 +22,7 @@ interface HeroProps {
 export function Hero({ btn, setBtn }: HeroProps) {
   const width = useWindowWidth()
   const [show, setShow] = useState(false)
+  const innerWidth = width != null && width < 1024
 
   function handleClick() {
     setShow(!show)
@@ -36,17 +37,16 @@ export function Hero({ btn, setBtn }: HeroProps) {
       <article className="w-full items-center md:items-start">
         <h1
           className={` ${ptSerif.className} font-bold text-[#0A0A22] ${
-            width &&
-            (width < 1024
+            innerWidth
               ? `text-center text-4xl/[1.1] ${show && 'hidden'}`
-              : 'text-left text-[2.5rem]/[1.1]')
-          }`}
+              : 'text-left text-[2.5rem]/[1.1]'
+          } `}
         >
           Encontre a calma
           <br /> em <span className="text-principal">5 minutos</span>
         </h1>{' '}
         <p
-          className={` ${roboto.className} ${width && width < 1024 && `${show && 'hidden'} `} mt-3 text-left text-xs/[1.3] text-[#808080] lg:w-3/4 lg:text-sm`}
+          className={` ${roboto.className} ${innerWidth && `${show && 'hidden'} `} mt-3 text-left text-xs/[1.3] text-[#808080] lg:w-3/4 lg:text-sm`}
         >
           Meditações guiadas para acalmar a mente e trazer um sono tranquilo.
           Deixe seu e-mail e seja o primeiro a saber do lançamento.
