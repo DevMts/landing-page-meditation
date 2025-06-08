@@ -25,6 +25,10 @@ export function Hero({ btn, setBtn }: HeroProps) {
 
   function handleClick() {
     setShow(!show)
+    if (show) {
+      const element = document.getElementById('email')
+      element?.scrollIntoView({ behavior: 'smooth' })
+    }
   }
 
   return (
