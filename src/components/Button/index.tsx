@@ -17,7 +17,7 @@ export function Button({
   return (
     <button
       disabled={disabled}
-      className={` ${poppins.className} ${className} bg-principal trasition rounded-full px-4 py-2.5 text-sm font-medium text-white uppercase duration-300 disabled:bg-[#e0e0e0] disabled:text-[#42b093]`}
+      className={` ${poppins.className} ${className} bg-principal rounded-full px-4 py-2.5 text-[0.625rem] font-medium text-white uppercase transition duration-300 disabled:bg-[#e0e0e0] disabled:text-[#42b093] sm:text-sm`}
     >
       {text}
     </button>
