@@ -53,7 +53,7 @@ export function Form({ btn, setBtn, setShow }: FormProps) {
 
         <input
           type="email"
-          className={`${btn && 'w-0'} fade-in placeholder:text-gray- 400 w-2 flex-1 bg-[#E9F5F3] px-3 text-sm text-gray-700 transition duration-500 outline-none`}
+          className={`${btn && 'w-0'} fade-in bg-[#E9F5F3] px-3 text-sm text-gray-700 transition duration-500 outline-none placeholder:text-gray-400`}
           {...(width &&
             (width < 1024 ? '' : { placeholder: 'Digite seu melhor email' }))}
           {...register('email')}
