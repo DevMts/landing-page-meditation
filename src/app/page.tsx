@@ -1,7 +1,8 @@
 'use client'
-import { Hero } from '@/components/Hero'
+import { Hero } from '@/components/Sections/Hero'
 import { Navbar } from '@/components/Navbar'
 import { useState } from 'react'
+import { TwoSection } from '@/components/Sections/TwoSection'
 
 export default function Home() {
   const [btn, setBtn] = useState(false)
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Navbar btn={btn} />
       <Hero btn={btn} setBtn={handleClick} />
+      <TwoSection />
     </>
   )
 }

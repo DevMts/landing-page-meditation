@@ -4,3 +4,6 @@
   --color-principal: #42b093;
   --color-secondary: #d8f3ea;
 }
+.swiper-pagination-bullet {
+  background-color: #42b093 !important;
+}

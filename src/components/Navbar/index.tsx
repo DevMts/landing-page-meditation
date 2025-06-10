@@ -35,7 +35,7 @@ export function Navbar({ btn }: { btn: boolean }) {
         </Link>
         <div>
           <Link
-            href="#email"
+            href={btn ? '#' : '#email'}
             className={` ${poppins.className} bg-principal ${btn ? 'hover:bg-principal hover:text-white' : 'hover:bg-secondary hover:text-gray-500'} trasition rounded-full px-4 py-2.5 text-[0.625rem] font-medium text-white uppercase duration-300 sm:text-sm`}
           >
             {btn ? 'Sua paz está a caminho.' : 'Quero minha Paz'}

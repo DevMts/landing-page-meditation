@@ -3,7 +3,7 @@ import { useWindowWidth } from '@/hooks/useWindowWidth'
 import { PT_Serif, Roboto } from 'next/font/google'
 import Image from 'next/image'
 import heroImg from '@/assets/imgHero.svg'
-import { Form } from '../Form'
+import { Form } from '../../Form'
 import { useState } from 'react'
 
 const roboto = Roboto({
@@ -36,7 +36,7 @@ export function Hero({ btn, setBtn }: HeroProps) {
     <section className="mx-auto flex h-[calc(100dvh-80px)] w-4/5 items-center justify-center">
       <article className="w-full items-center md:items-start">
         <h1
-          className={` ${ptSerif.className} font-bold text-[#0A0A22] ${
+          className={` ${ptSerif.className} font-bold text-[#0A0A22] transition-all duration-150 ease-in-out${
             innerWidth
               ? `text-center text-4xl/[1.1] ${show && 'hidden'}`
               : 'text-left text-[2.5rem]/[1.1]'
