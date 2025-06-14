@@ -28,7 +28,9 @@ export function Hero({ btn, setBtn }: HeroProps) {
     setShow(!show)
     if (show) {
       const element = document.getElementById('email')
-      element?.scrollIntoView({ behavior: 'smooth' })
+      if (width != null && width < 1024) {
+        element?.scrollIntoView({ behavior: 'smooth' })
+      }
     }
   }
 
