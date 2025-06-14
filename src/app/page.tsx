@@ -4,6 +4,7 @@ import { Navbar } from '@/components/Navbar'
 import { useState } from 'react'
 import { TwoSection } from '@/components/Sections/TwoSection'
 import { ThreeSection } from '@/components/Sections/ThreeSection'
+import { FourSection } from '@/components/Sections/FourSection'
 
 export default function Home() {
   const [btn, setBtn] = useState(false)
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero btn={btn} setBtn={handleClick} />
       <TwoSection />
       <ThreeSection />
+      <FourSection />
     </>
   )
 }

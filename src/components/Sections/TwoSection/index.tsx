@@ -47,7 +47,7 @@ const Card = ({ image, title, description }: CardProps) => (
 
 export function TwoSection() {
   return (
-    <section className="-[#00f0c8] h-[calc(100dvh-80px)] w-full pt-20">
+    <section className="h-[calc(100dvh-240px)] w-full md:pt-20">
       <div className="mx-auto mb-16 flex w-4/5 flex-col items-center gap-2">
         <span className="text-principal mx-auto text-center text-sm/[1.1] font-bold">
           Sua mente não desliga?
@@ -112,7 +112,7 @@ export function TwoSection() {
         </div>
 
         {/* Cards lado a lado - visível em telas maiores */}
-        <div className="mx-auto my-8 hidden w-fit justify-center gap-50 md:flex">
+        <div className="mx-auto mt-8 mb-10 hidden w-fit justify-center gap-50 md:flex">
           <Card
             image={clock}
             title="Sessões Rápidas"

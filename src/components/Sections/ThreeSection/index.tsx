@@ -38,7 +38,7 @@ function Card({ image, title, description, link, color }: CardProps) {
       <strong className={`${poppins.className} font-bold`}>{title}</strong>
       <div className="flex flex-1 flex-col justify-between gap-10">
         <p
-          className={`${roboto.className} text-left text-xs/[1.3] text-[#525252] sm:text-sm/[1.3]`}
+          className={`${roboto.className} max-w-5/6 text-left text-xs/[1.3] text-[#525252] sm:text-sm/[1.3]`}
         >
           {description}
         </p>
