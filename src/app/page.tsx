@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { TwoSection } from '@/components/Sections/TwoSection'
 import { ThreeSection } from '@/components/Sections/ThreeSection'
 import { FourSection } from '@/components/Sections/FourSection'
+import { FiveSection } from '@/components/Sections/FiveSection'
 
 export default function Home() {
   const [btn, setBtn] = useState(false)
@@ -18,6 +19,7 @@ export default function Home() {
       <TwoSection />
       <ThreeSection />
       <FourSection />
+      <FiveSection btn={btn} setBtn={handleClick} />
     </>
   )
 }

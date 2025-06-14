@@ -26,12 +26,6 @@ export function Hero({ btn, setBtn }: HeroProps) {
 
   function handleClick() {
     setShow(!show)
-    if (show) {
-      const element = document.getElementById('email')
-      if (width != null && width < 1024) {
-        element?.scrollIntoView({ behavior: 'smooth' })
-      }
-    }
   }
 
   return (
