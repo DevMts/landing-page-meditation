@@ -29,7 +29,7 @@ export function FiveSection({ btn, setBtn }: FiveProps) {
   }
 
   return (
-    <section className="mx-auto flex gap-10 px-10 pt-15 md:max-w-4/5 md:flex-row md:justify-between md:px-0">
+    <section className="mx-auto mt-10 flex gap-10 px-10 pt-15 md:max-w-4/5 md:flex-row md:justify-between md:px-0">
       <article className="hidden md:block">
         <Image src={img} alt="Vercel Logo" />
       </article>
